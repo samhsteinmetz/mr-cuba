@@ -43,7 +43,7 @@ export function About({
             </div>
             <div className="mt-8 flex flex-wrap gap-4">
               <div className="bg-white px-6 py-4 rounded-lg shadow-md">
-                <p className="text-3xl font-bold text-primary">5+</p>
+                <p className="text-3xl font-bold text-primary">15+</p>
                 <p className="text-sm text-gray-600">{t('about.yearsExp')}</p>
               </div>
               <div className="bg-white px-6 py-4 rounded-lg shadow-md">

@@ -26,7 +26,7 @@ const translations = {
     
     // About
     'about.title': 'Meet Mr. Cuba',
-    'about.description': 'With over 5 years of experience guiding tours through Central Vietnam, I offer authentic, personalized Easy Rider motorbike adventures that showcase the hidden gems and breathtaking landscapes of my homeland.\n\nFrom misty mountains to pristine beaches, ancient temples to vibrant local markets – experience Vietnam through the eyes of a local.\n\nNo license or experience on scooters is required, I will teach you everything you need to know.',
+    'about.description': 'With over 15 years of experience guiding tours through Central Vietnam, I offer authentic, personalized Easy Rider motorbike adventures that showcase the hidden gems and breathtaking landscapes of my homeland.\n\nFrom misty mountains to pristine beaches, ancient temples to vibrant local markets – experience Vietnam through the eyes of a local.\n\nNo license or experience on scooters is required, I will teach you everything you need to know.',
     'about.yearsExp': 'Years Experience',
     'about.authentic': 'Authentic',
     
@@ -70,7 +70,7 @@ const translations = {
     
     // About
     'about.title': 'Mr. Cuba를 만나보세요',
-    'about.description': '베트남 중부 투어 가이드로 5년 이상의 경험을 바탕으로, 제 고향의 숨겨진 보석과 숨막히는 풍경을 보여주는 정통적이고 개인화된 이지 라이더 오토바이 모험을 제공합니다.\n\n안개 낀 산에서 깨끗한 해변, 고대 사원에서 활기찬 현지 시장까지 - 현지인의 눈으로 베트남을 경험하세요.\n\n스쿠터 면허증이나 경험이 필요하지 않습니다. 제가 필요한 모든 것을 가르쳐드립니다.',
+    'about.description': '베트남 중부 투어 가이드로 15년 이상의 경험을 바탕으로, 제 고향의 숨겨진 보석과 숨막히는 풍경을 보여주는 정통적이고 개인화된 이지 라이더 오토바이 모험을 제공합니다.\n\n안개 낀 산에서 깨끗한 해변, 고대 사원에서 활기찬 현지 시장까지 - 현지인의 눈으로 베트남을 경험하세요.\n\n스쿠터 면허증이나 경험이 필요하지 않습니다. 제가 필요한 모든 것을 가르쳐드립니다.',
     'about.yearsExp': '년 경력',
     'about.authentic': '정통',
     
@@ -114,7 +114,7 @@ const translations = {
     
     // About
     'about.title': '认识 Mr. Cuba',
-    'about.description': '凭借5年以上越南中部导游经验，我提供正宗、个性化的易骑士摩托车冒险，展示我家乡的隐藏宝石和令人惊叹的风景。\n\n从雾蒙蒙的山脉到原始海滩，从古老寺庙到充满活力的当地市场 - 通过当地人的眼睛体验越南。\n\n不需要摩托车驾照或经验，我会教你所需的一切。',
+    'about.description': '凭借15年以上越南中部导游经验，我提供正宗、个性化的易骑士摩托车冒险，展示我家乡的隐藏宝石和令人惊叹的风景。\n\n从雾蒙蒙的山脉到原始海滩，从古老寺庙到充满活力的当地市场 - 通过当地人的眼睛体验越南。\n\n不需要摩托车驾照或经验，我会教你所需的一切。',
     'about.yearsExp': '年经验',
     'about.authentic': '正宗',
     
@@ -158,7 +158,7 @@ const translations = {
     
     // About
     'about.title': 'Rencontrez Mr. Cuba',
-    'about.description': 'Avec plus de 5 ans d\'expérience en tant que guide au centre du Vietnam, je propose des aventures authentiques et personnalisées en moto Easy Rider qui mettent en valeur les joyaux cachés et les paysages à couper le souffle de ma patrie.\n\nDes montagnes brumeuses aux plages immaculées, des temples anciens aux marchés locaux animés - découvrez le Vietnam à travers les yeux d\'un local.\n\nAucun permis ni expérience en scooter n\'est requis, je vous enseignerai tout ce que vous devez savoir.',
+    'about.description': 'Avec plus de 15 ans d\'expérience en tant que guide au centre du Vietnam, je propose des aventures authentiques et personnalisées en moto Easy Rider qui mettent en valeur les joyaux cachés et les paysages à couper le souffle de ma patrie.\n\nDes montagnes brumeuses aux plages immaculées, des temples anciens aux marchés locaux animés - découvrez le Vietnam à travers les yeux d\'un local.\n\nAucun permis ni expérience en scooter n\'est requis, je vous enseignerai tout ce que vous devez savoir.',
     'about.yearsExp': 'Années d\'expérience',
     'about.authentic': 'Authentique',
     
