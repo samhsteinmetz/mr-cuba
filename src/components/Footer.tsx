@@ -1,5 +1,8 @@
+import { useLanguage } from '../contexts/LanguageContext'
+
 export function Footer() {
   const currentYear = new Date().getFullYear()
+  const { t } = useLanguage()
 
   return (
     <footer className="bg-secondary text-white py-12">
@@ -11,38 +14,37 @@ export function Footer() {
               MR. CUBA
             </h3>
             <p className="text-white/70 leading-relaxed">
-              Authentic easy rider motorbike tours through the heart of Central Vietnam. 
-              Experience the real Vietnam with a local guide.
+              {t('footer.description')}
             </p>
           </div>
 
           {/* Quick Links */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Quick Links</h4>
+            <h4 className="font-semibold text-lg mb-4">{t('footer.quickLinks')}</h4>
             <ul className="space-y-2">
               <li>
                 <a href="#home" className="text-white/70 hover:text-primary transition-colors">
-                  Home
+                  {t('nav.home')}
                 </a>
               </li>
               <li>
                 <a href="#about" className="text-white/70 hover:text-primary transition-colors">
-                  About
+                  {t('nav.about')}
                 </a>
               </li>
               <li>
                 <a href="#gallery" className="text-white/70 hover:text-primary transition-colors">
-                  Gallery
+                  {t('nav.gallery')}
                 </a>
               </li>
               <li>
                 <a href="#testimonials" className="text-white/70 hover:text-primary transition-colors">
-                  Testimonials
+                  {t('nav.testimonials')}
                 </a>
               </li>
               <li>
                 <a href="#contact" className="text-white/70 hover:text-primary transition-colors">
-                  Contact
+                  {t('nav.contact')}
                 </a>
               </li>
             </ul>
@@ -50,11 +52,11 @@ export function Footer() {
 
           {/* Contact Info */}
           <div>
-            <h4 className="font-semibold text-lg mb-4">Contact</h4>
+            <h4 className="font-semibold text-lg mb-4">{t('footer.contact')}</h4>
             <ul className="space-y-2 text-white/70">
-              <li>Central Vietnam</li>
-              <li>Phone: +84 366 952 767</li>
-              <li>Email: mrcuba@example.com</li>
+              <li>{t('footer.location')}</li>
+              <li>{t('contact.phone')}: +84 366 952 767</li>
+              <li>{t('contact.email')}: cubahuetour@gmail.com</li>
             </ul>
           </div>
         </div>
@@ -62,8 +64,8 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="border-t border-white/10 pt-8 text-center text-white/60">
           <p>
-            © {currentYear} Mr. Cuba Tours. All rights reserved. 
-            {' '} Made with ❤️ in Vietnam
+            © {currentYear} {t('footer.rights')} 
+            {' '} {t('footer.madeWith')}
           </p>
         </div>
       </div>

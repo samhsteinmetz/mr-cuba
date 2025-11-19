@@ -1,8 +1,11 @@
 import { useState, useEffect } from 'react'
+import { useLanguage } from '../contexts/LanguageContext'
+import { LanguageSwitcher } from './LanguageSwitcher'
 
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const { t } = useLanguage()
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,11 +17,11 @@ export function Navigation() {
   }, [])
 
   const navItems = [
-    { label: 'Home', href: '#home' },
-    { label: 'About', href: '#about' },
-    { label: 'Gallery', href: '#gallery' },
-    { label: 'Testimonials', href: '#testimonials' },
-    { label: 'Contact', href: '#contact' }
+    { label: t('nav.home'), href: '#home' },
+    { label: t('nav.about'), href: '#about' },
+    { label: t('nav.gallery'), href: '#gallery' },
+    { label: t('nav.testimonials'), href: '#testimonials' },
+    { label: t('nav.contact'), href: '#contact' }
   ]
 
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
@@ -52,7 +55,7 @@ export function Navigation() {
           </a>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden md:flex items-center space-x-4">
             {navItems.map((item) => (
               <a
                 key={item.href}
@@ -65,12 +68,13 @@ export function Navigation() {
                 {item.label}
               </a>
             ))}
+            <LanguageSwitcher isScrolled={isScrolled} />
             <a
               href="#contact"
               onClick={(e) => handleNavClick(e, '#contact')}
               className="px-6 py-2 bg-primary hover:bg-primary/90 text-secondary font-semibold rounded-full transition-all duration-300 transform hover:scale-105"
             >
-              Book Now
+              {t('nav.bookNow')}
             </a>
           </div>
 
@@ -113,12 +117,15 @@ export function Navigation() {
                 {item.label}
               </a>
             ))}
+            <div className="pt-2 pb-4 border-b border-gray-200">
+              <LanguageSwitcher isScrolled={true} />
+            </div>
             <a
               href="#contact"
               onClick={(e) => handleNavClick(e, '#contact')}
               className="block text-center px-6 py-3 bg-primary text-secondary font-semibold rounded-full"
             >
-              Book Now
+              {t('nav.bookNow')}
             </a>
           </div>
         </div>

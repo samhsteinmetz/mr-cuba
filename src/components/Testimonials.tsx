@@ -1,3 +1,5 @@
+import { useLanguage } from '../contexts/LanguageContext'
+
 interface Testimonial {
   name: string
   country: string
@@ -8,7 +10,6 @@ interface Testimonial {
 
 interface TestimonialsProps {
   testimonials?: Testimonial[]
-  title?: string
 }
 
 const defaultTestimonials: Testimonial[] = [
@@ -50,18 +51,18 @@ function StarRating({ rating = 5 }: { rating?: number }) {
 }
 
 export function Testimonials({
-  testimonials = defaultTestimonials,
-  title = 'What Travelers Say'
+  testimonials = defaultTestimonials
 }: TestimonialsProps) {
+  const { t } = useLanguage()
   return (
     <section id="testimonials" className="py-20 md:py-32 bg-secondary">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-white mb-4">
-            {title}
+            {t('testimonials.title')}
           </h2>
           <p className="text-xl text-white/70 max-w-2xl mx-auto">
-            Hear from travelers who have experienced Central Vietnam with me on my motorbike tour!
+            {t('testimonials.subtitle')}
           </p>
         </div>
 

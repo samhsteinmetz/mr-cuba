@@ -1,14 +1,14 @@
 import { useState } from 'react'
+import { useLanguage } from '../contexts/LanguageContext'
 
 interface GalleryProps {
   images?: string[]
-  title?: string
 }
 
 export function Gallery({
-  images = [],
-  title = 'Tour Gallery'
+  images = []
 }: GalleryProps) {
+  const { t } = useLanguage()
   const [selectedImage, setSelectedImage] = useState<string | null>(null)
   const [isLightboxOpen, setIsLightboxOpen] = useState(false)
 
@@ -43,10 +43,10 @@ export function Gallery({
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="font-display text-4xl md:text-5xl font-bold text-secondary mb-4">
-            {title}
+            {t('gallery.title')}
           </h2>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Photos from my past tours. Some I will take of you and some you will take!
+            {t('gallery.subtitle')}
           </p>
         </div>
 

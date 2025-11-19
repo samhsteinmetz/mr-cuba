@@ -59,39 +59,17 @@ function App() {
     whatsapp: '+84 366 952 767'
   }
 
-  const aboutContent = {
-    name: 'Mr. Cuba',
-    description: '\tWith over 5 years of experience guiding tours through Central Vietnam, I offer authentic, personalized Easy Rider motorbike adventures that showcase the hidden gems and breathtaking landscapes of my homeland. \n\n \tFrom misty mountains to pristine beaches, ancient temples to vibrant local markets – experience Vietnam through the eyes of a local.\n\n \tNo license or experience on scooters is required, I will teach you everything you need to know.',
-    image: '/images/motorbike-groupphoto.jpg'
-  }
+  const aboutImage = '/images/motorbike-groupphoto.jpg'
 
   return (
     <div className="min-h-screen">
       <Navigation />
       <main>
-        <Hero
-          title="MR. CUBA"
-          subtitle="Authentic Easy Rider Motorbike Tours in Central Vietnam"
-          images={heroImages}
-        />
-        <About
-          name={aboutContent.name}
-          description={aboutContent.description}
-          image={aboutContent.image}
-        />
-        <Gallery
-          title="Tour Gallery"
-          images={galleryImages}
-        />
-        <Testimonials
-          title="What Travelers Say"
-          testimonials={testimonials}
-        />
-        <Contact
-          title="Get In Touch"
-          subtitle="Ready to explore Central Vietnam? Contact me to book your authentic easy rider motorbike adventure!"
-          contactInfo={contactInfo}
-        />
+        <Hero images={heroImages} />
+        <About image={aboutImage} />
+        <Gallery images={galleryImages} />
+        <Testimonials testimonials={testimonials} />
+        <Contact contactInfo={contactInfo} />
       </main>
       <Footer />
     </div>
