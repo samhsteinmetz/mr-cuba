@@ -55,7 +55,7 @@ function App() {
 
   const contactInfo = {
     phone: '+84 366 952 767',
-    email: 'mrcuba@example.com',
+    email: 'cubahuetour@gmail.com',
     whatsapp: '+84 366 952 767'
   }
 
